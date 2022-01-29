@@ -122,26 +122,18 @@ namespace GameJaaj.Source.Scenes {
 
 
             // TODO: Add your drawing code here
-            /*_spriteBatch.Begin(samplerState: clamp);
-            foreach (Objects objects in _objects) {
-                _spriteBatch.Draw(objects._texture, objects._position + new Vector2(8,8), objects._hitbox, Color.HotPink);
-            }
+            
+            _spriteBatch.Begin(samplerState: clamp);
             _spriteBatch.Draw(_game._enemy._spriteSheet, _game._enemy._position + new Vector2(5,13), _game._enemy._hitbox, Color.Brown);
             _spriteBatch.Draw(_game._player._spriteSheet, _game._player._position + new Vector2(5,13), _game._player._hitbox, Color.BlueViolet);
-            _spriteBatch.End();*/
+            foreach (Objects objects in _objects) { _spriteBatch.Draw(objects._texture, objects._position + new Vector2(8,8), objects._hitbox, Color.HotPink); }
+            _spriteBatch.End();
 
             _spriteBatch.Begin(samplerState: clamp);
             foreach (Objects objects in _objects) { objects.Draw(_spriteBatch, gameTime); }
             _game._enemy.Draw(_spriteBatch, gameTime);
             _game._player.Draw(_spriteBatch, gameTime);
             _spriteBatch.End();
-
-            _spriteBatch.Begin(samplerState: clamp);
-            _spriteBatch.Draw(_game._enemy._spriteSheet, _game._enemy._position + new Vector2(5,13), _game._enemy._hitbox, Color.Brown);
-            _spriteBatch.Draw(_game._player._spriteSheet, _game._player._position + new Vector2(5,13), _game._player._hitbox, Color.BlueViolet);
-            foreach (Objects objects in _objects) { _spriteBatch.Draw(objects._texture, objects._position, objects._hitbox, Color.HotPink); }
-            _spriteBatch.End();
-
 
             _spriteBatch.Begin(samplerState: clamp);
 
@@ -151,7 +143,7 @@ namespace GameJaaj.Source.Scenes {
             _spriteBatch.Draw(_game._playerHead, new Vector2((_game._graphics.PreferredBackBufferWidth / 2) / 5, -20) - new Vector2(50,-30), new Rectangle(0,0,32,10),Color.White,0,Vector2.Zero,2f,SpriteEffects.None,0);
             _game._player._score.Draw(_spriteBatch, gameTime, new Vector2((_game._graphics.PreferredBackBufferWidth / 2) / 5, -20), _game._fontColor);
 
-            ////////// É PRA DESENHAR SOMBRA PRETA NDERKJIDKRJFYGTYGUHJIOKPJHGTFR6TGYH
+            ////////// Shadow hehe
             _spriteBatch.DrawString(_game._defFont, string.Format("{0:0}", _timerCountdown), new Vector2(_game._graphics.PreferredBackBufferWidth / 4.3f, 10), _game._shadowColor, 0, Vector2.Zero,1.07f,SpriteEffects.None,0);
             _spriteBatch.DrawString(_game._defFont, string.Format("{0:0}", _timerCountdown), new Vector2(_game._graphics.PreferredBackBufferWidth / 4.3f, 10), _game._fontColor);
 
