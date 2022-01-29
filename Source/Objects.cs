@@ -15,7 +15,7 @@ namespace GameJaaj.Source {
         private const int W = 31, H = 12;
 
         public Rectangle _sourceRect;        
-        public Rectangle _hitbox; //{ get { return new Rectangle((int)_position.X, 8, 20, 12); } }
+        public Rectangle _hitbox; //{ get { return new Rectangle((int)_position.X, (int)_position.Y, 20, 12); } }
 
         public bool CanSee = true;
 
@@ -30,7 +30,7 @@ namespace GameJaaj.Source {
             Multiplier = Random.Next(1,7);
 
             _sourceRect = new Rectangle(X + (W * Multiplier), Y, W, H);
-            _hitbox = new Rectangle(0, 7, 20, 12); 
+            _hitbox = new Rectangle(X + 4, Y + 4, 20, 12); 
         }
 
         public void Update(GameTime gameTime) {
