@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../../../../../Pictures/cortatorresmo.png
+#begin Assets/Pictures/cortatorresmo.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,9 +23,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:../../../../../../Pictures/cortatorresmo.png;Assets/cortatorresmo.png
+/build:Assets/cortatorresmo.png;Assets/cortatorresmo.png
 
-#begin ../../../../../../Pictures/fritatorresmo.png
+#begin Assets/fritatorresmo.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -35,7 +35,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:../../../../../../Pictures/fritatorresmo.png;Assets/fritatorresmo.png
+/build:Assets/fritatorresmo.png;Assets/fritatorresmo.png
 
 #begin Assets/cortatorresmo.png
 /importer:TextureImporter
