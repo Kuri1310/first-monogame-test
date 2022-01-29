@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/manto/Desktop/Diversos/C Sharp/Monogame/GameJaaj/Content/Assets/Sounds/surf.mp3</SourceFile>
+  <SourceTime>2022-01-25T00:21:56.7969319-03:00</SourceTime>
+  <DestFile>C:/Users/manto/Desktop/Diversos/C Sharp/Monogame/GameJaaj/Content/bin/DesktopGL/Content/Assets/Sounds/surf.xnb</DestFile>
+  <DestTime>2022-01-29T15:48:30.1632538-03:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2020-08-10T16:17:54-03:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54-03:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/manto/Desktop/Diversos/C Sharp/Monogame/GameJaaj/Content/bin/DesktopGL/Content/Assets/Sounds/surf.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>
